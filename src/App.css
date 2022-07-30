@@ -1,40 +1,7 @@
-.container {
-  background-color: black;
+html {
+  box-sizing: border-box;
 }
 
-.rotate {
-  animation: material-circle-outer-span 10s linear infinite;
-}
-
-.material-rotate {
-  transform-origin: 0 0;
-  animation-name: material-circle;
-  animation-duration: 10s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-/* material ui circular progress */
-@keyframes material-circle {
-  0% {
-    stroke-dasharray: 1px, 200px;
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dasharray: 100px, 200px;
-    stroke-dashoffset: -15px;
-  }
-  100% {
-    stroke-dasharray: 100px, 200px;
-    stroke-dashoffset: -125px;
-  }
-}
-
-@keyframes material-circle-outer-span {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+body {
+  margin: 0;
 }
