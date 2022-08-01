@@ -41,39 +41,18 @@ export const LineProgress = () => {
         ></span>
       </span>
 
-      <span
-        style={{
-          marginTop: "4px",
-          position: "relative",
-          display: "block",
-          height: "4px",
-        }}
-      >
-        <span
-          className="middle-to-left"
-          style={{
-            position: "absolute",
-            left: 0,
-            right: "50%",
-            top: 0,
-            bottom: 0,
-            backgroundColor: "red",
-          }}
-        ></span>
-
-        <span
-          className="middle-to-right"
-          style={{
-            transform: "rotate(180deg)",
-            position: "absolute",
-            left: 0,
-            right: "50%",
-            top: 0,
-            bottom: 0,
-            backgroundColor: "red",
-          }}
-        ></span>
-      </span>
+      <svg viewBox="0 0 100 2">
+          <line
+            className="draw-line"
+            x1={0}
+            y1={0}
+            x2={100}
+            y2={0}
+            stroke={"currentColor"}
+            strokeDasharray={100}
+            strokeDashoffset={100}
+          />
+        </svg>
     </div>
   );
 };
